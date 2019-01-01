@@ -7,14 +7,14 @@ paginate: 5
 language: 'en-uk'
 
 # Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+name: '打码日志'
+description: '好编程，不求甚解'
 
 short_url: 'strollhy.github.io'
-google_analytics: UA-69281367-1
-disqus: username
+google_analytics: UA-131575173-1
+disqus: strollhy
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+baseurl: ''
 
 # Permalinks
 permalink: /:title
