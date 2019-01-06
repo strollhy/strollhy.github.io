@@ -2,6 +2,7 @@
 layout: post
 cover: 'assets/images/cover2.jpg'
 navigation: true
+disqus: true
 title: S.O.L.I.D - 面向对象设计的5大原则
 date: 2019-01-01 12:08:00
 tags: 设计原则
