@@ -40,4 +40,9 @@ martin:
   assets: assets/images/martin.jpg
 strollhy:
   username: strollhy
-  name: strollhy
+  name: Chris Song
+  location: California, USA
+  url_full: https://strollhy.github.io/
+  url: strollhy.github.io
+  bio: 普通全栈工程师一枚，热爱读书、科幻和写作。
+  assets: assets/images/avatar.jpg
