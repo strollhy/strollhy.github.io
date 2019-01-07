@@ -3,7 +3,7 @@
 #highlighter: pygments
 markdown: kramdown
 highlighter: rouge
-paginate: 5
+paginate: 8
 language: 'en-uk'
 
 # Website info
@@ -44,13 +44,13 @@ plugins: [jekyll-paginate]
 # or "master" otherwise
 safe: false
 lsi: false
-username: jekyller
-repo: strollhy
+username: strollhy
+repo: strollhy.github.io
 branch: master
 relative_source: _site-pages/
 destination: _site/
 production_url:  https://strollhy.github.io/
-source_url:  https://github.com/strollhy.github.io/
+source_url:  https://github.com/strollhy/strollhy.github.io/
 
 exclude:
   - README.md
