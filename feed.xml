@@ -1,28 +1,25 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.name | xml_escape }} - Articles</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+    <title>打码笔记 - Articles</title>
+    <description>好打码，不求甚解</description>
     <link>
-    {{ site.url }}</link>
-    {% for post in site.posts %}
-      {% unless post.link %}
+    </link>
+    
+      
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        {% if post.excerpt %}
-          <description>{{ post.excerpt | xml_escape }}</description>
-        {% else %}
-          <description>{{ post.content | xml_escape }}</description>
-        {% endif %}
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <title>S.O.L.I.D - 面向对象设计的5大原则</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/SOLID&quot;&gt;S.O.L.I.D&lt;/a&gt; 是面向对象设计（OOD）的头五大基本原则的首字母缩写，由俗称「鲍勃大叔」的 &lt;a href=&quot;https://en.wikipedia.org/wiki/Robert_C._Martin&quot;&gt;Robert C. Martin&lt;/a&gt; 提出。&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 01 Jan 2019 12:08:00 +0000</pubDate>
         <link>
-        {{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        /solid-principle</link>
+        <guid isPermaLink="true">/solid-principle</guid>
       </item>
-      {% endunless %}
-    {% endfor %}
+      
+    
   </channel>
 </rss>
