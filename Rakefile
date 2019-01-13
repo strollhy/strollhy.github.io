@@ -10,11 +10,21 @@ require 'date'
 require 'yaml'
 
 CONFIG = YAML.load(File.read('_config.yml'))
-USERNAME = CONFIG["username"]
-REPO = CONFIG["repo"]
-SOURCE_BRANCH = CONFIG["branch"]
-DESTINATION_BRANCH = "gh-pages"
+USERNAME = CONFIG["username"] || ENV['GIT_NAME']
+REPO = CONFIG["repo"] || "#{USERNAME}.github.io"
 CNAME = CONFIG["CNAME"]
+
+# Determine source and destination branch
+# User or organization: source -> master
+# Project: master -> gh-pages
+# Name of source branch for user/organization defaults to "source"
+if REPO == "#{USERNAME}.github.io"
+  SOURCE_BRANCH = CONFIG['branch'] || "source"
+  DESTINATION_BRANCH = "master"
+else
+  SOURCE_BRANCH = "master"
+  DESTINATION_BRANCH = "gh-pages"
+end
 
 def check_destination
   unless Dir.exist? CONFIG["destination"]

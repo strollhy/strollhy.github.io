@@ -40,13 +40,12 @@ plugins: [jekyll-paginate]
 # https://github.com/USERNAME/REPO.git
 # username defaults to ENV['GIT_NAME'] used by Travis
 # repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
+# Branch defaults to "source" for USERNAME.github.io or "master" otherwise
 safe: false
 lsi: false
 username: strollhy
 repo: strollhy.github.io
-branch: master
+branch: source
 relative_source: _site-pages/
 destination: _site/
 production_url:  https://strollhy.github.io/
